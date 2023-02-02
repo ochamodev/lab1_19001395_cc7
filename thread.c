@@ -53,7 +53,7 @@ void *generatePrimeNumbers(void *param) {
 
         if (coeficient  == 2) {
             limit++;
-            printf("Thread %d: El número %d es primo.\n", arg->threadId, num);
+            printf("Thread %lu: El número %d es primo.\n", arg->threadId, num);
         }
         num++;
     }

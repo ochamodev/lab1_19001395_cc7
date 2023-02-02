@@ -1,8 +1,9 @@
+all: process thread
+
 process:
-	gcc -lpthread process.c -o process.o
+	gcc process.c -o process.out
 
 thread:
-	gcc -pthread thread.c -o thread.o
-	./thread.o
+	gcc -pthread thread.c -o thread.out
 clean:
 	rm -f *.o
